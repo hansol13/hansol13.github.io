@@ -1,7 +1,0 @@
-.card {display:inline-block;}
-
-@media screen and (max-width: 600px) {
-    img>profile{
-        visibility: hidden;
-    }
-}
