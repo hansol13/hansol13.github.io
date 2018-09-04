@@ -6,11 +6,12 @@
 
 a {
     text-decoration: none;
-    color: rgb(61, 146, 201);
+    color: black;
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #88bbdd;
 }
 
 h3 {
@@ -130,9 +131,15 @@ div.hidden {
     display:none;
 }
 
+.post-title{
+    margin-bottom: 0.2em;
+}
+
 .post-meta{
     font-size: 75%;
     color: #cccccc;
+    display: inline-block;
+    margin: 0;
 }
 
 .post-description{
