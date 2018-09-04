@@ -125,3 +125,23 @@ h3 {
         text-align: center;
     }
 }
+
+div.hidden {
+    display:none;
+}
+
+.post-meta{
+    font-size: 75%;
+    color: #cccccc;
+}
+
+.post-description{
+    font-size: 90%;
+}
+
+section.post{
+}
+
+.interests{
+    text-align: right;
+}
