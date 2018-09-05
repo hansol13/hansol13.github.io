@@ -93,8 +93,9 @@ h3 {
 
 .footer {
     padding: 1em 0;
-  grid-row-start: 2;
-  grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    bottom:0
 
 }
 .footer a {
