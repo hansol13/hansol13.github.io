@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>Michael H Baek</title>
-    <link rel=icon href=Logos/favicon-256.png>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel=icon href=Logos/favicon-256.png> <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="css/layouts/blog.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-        
-        $(document).ready(function(){
+
+        $(document).ready(function () {
             let starter = $("div.hidden");
             let sidebar = $("header.sidebar");
             starter.fadeIn(1000).removeClass('hidden');
@@ -38,85 +39,93 @@
                                     <a href="https://www.github.com/hansol13"><img src="Logos/GitHub-Mark-32px.png" alt="Github"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://www.linkedin.com/in/michaelhbaek/"><img src="Logos/LinkedIn-Logo-28px.png" alt="LinkedIn"></a>
+                                    <a href="https://www.linkedin.com/in/michaelhbaek/"><img src="Logos/LinkedIn-Logo-28px.png"
+                                            alt="LinkedIn"></a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-            </header>
+        </header>
 
-            <!-- main body -->
-            <div class="content pure-u-1 pure-u-md-3-4">
-                <div>
-                    <!-- A wrapper for all projects-->
-                    <div class="posts">
-                        <h1 class="content-subhead">Projects</h1>
+        <!-- main body -->
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                <!-- A wrapper for all projects-->
+                <div class="posts">
+                    <h1 class="content-subhead">Projects</h1>
 
-                        <!-- A single post -->
-                        <section class="post" id="tkdscoreboard">
-                            <header class="post-header">
-                                <h2 class="post-title">
-                                    <a href="https://hansol13.github.io/poomsae-score">Taekwondo Scoreboard</a></h2>
-                                    <i class="post-meta">for Villanova Taekwondo and the entire Taekwondo Community</i>
-                                
-                            </header>
+                    <!-- A single post -->
+                    <section class="post" id="tkdscoreboard">
+                        <header class="post-header">
+                            <h2 class="post-title">
+                                <a href="https://hansol13.github.io/poomsae-score">Taekwondo Scoreboard</a></h2>
+                            <i class="post-meta">for Villanova Taekwondo and the entire Taekwondo Community</i>
 
-                            <div class="post-description">
-                                <p>World Taekwondo standard Poomsae and Sparring scoreboard application built for Villanova Taekwondo to utilize technology in practice sessions to efficiently track scores and student progress.</p>
-                                
-                                <p>Built using <a href="https://reactjs.org/">ReactJS</a>, <a href="https://material-ui.com/">Material-UI</a>, and <a href="https://firebase.google.com/">Firebase</a></p>
-                            </div>
-                        </section>
-                        <br>
-                        <section class="post" id="tkdwebsite">
-                            <header class="post-header">
-                                <h2 class="post-title">
-                                    <a href="https://villanovataekwondo.github.io/pages">Villanova Club Taekwondo Website</a></h2>
-                                    <i class="post-meta">for Villanova Taekwondo and its supporters</i>
-                                
-                            </header>
+                        </header>
 
-                            <div class="post-description">
-                                <p>Built and designed Villanova Club Taekwondo's website.</p>
-                                <p>Built using <a href="https://startbootstrap.com/template-overviews/scrolling-nav/">this bootstrap template.</a></p>
-                            </div>
-                        </section>
-                        <br>
-                        <section class="post" id="wscApp">
-                            <header class="post-header">
-                                <h2 class="post-title">
-                                    <a href="http://w-catechisms.herokuapp.com/">Westminster Shorter Catechism Reference and Search</a>
-                                </h2>
-                                <i class="post-meta">for public use</i>
-                                
-                            </header>
+                        <div class="post-description">
+                            <p>World Taekwondo standard Poomsae and Sparring scoreboard application built for Villanova
+                                Taekwondo to utilize technology in practice sessions to efficiently track scores and
+                                student progress.</p>
 
-                            <div class="post-description">
+                            <p>Built using <a href="https://reactjs.org/">ReactJS</a>, <a href="https://material-ui.com/">Material-UI</a>,
+                                and <a href="https://firebase.google.com/">Firebase</a></p>
+                        </div>
+                    </section>
+                    <br>
+                    <!-- <section class="post" id="tkdwebsite">
+                        <header class="post-header">
+                            <h2 class="post-title">
+                                <a href="https://villanovataekwondo.github.io/pages">Villanova Club Taekwondo Website</a></h2>
+                            <i class="post-meta">for Villanova Taekwondo and its supporters</i>
+
+                        </header>
+
+                        <div class="post-description">
+                            <p>Built and designed Villanova Club Taekwondo's website.</p>
+                            <p>Built using <a href="https://startbootstrap.com/template-overviews/scrolling-nav/">this
+                                    bootstrap template.</a></p>
+                        </div>
+                    </section> -->
+                    <br>
+                    <section class="post" id="wscApp">
+                        <header class="post-header">
+                            <h2 class="post-title">
+                                <a href="http://w-catechisms.herokuapp.com/">Westminster Shorter Catechism Reference
+                                    and Search</a>
+                            </h2>
+                            <i class="post-meta">for public use</i>
+
+                        </header>
+
+                        <div class="post-description">
                             <p>Guides Referenced:</p>
-                                <ul>
-                                    <li><a href="https://www.youtube.com/watch?v=v0t42xBIYIs">Traversy Media's React Starter Kit (React, Node, Express)</a></li>
-                                    <li><a href="https://medium.freecodecamp.org/the-ultimate-guide-to-web-scraping-with-node-js-daa2027dcd3">Dan Ni's Web Scraping Guide</a></li>
-                                    <li><a href="https://www.youtube.com/watch?v=RM_nXOyHwN0">Codegeous' Filter Guide</a></li>
-                                </ul>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=v0t42xBIYIs">Traversy Media's React
+                                        Starter Kit (React, Node, Express)</a></li>
+                                <li><a href="https://medium.freecodecamp.org/the-ultimate-guide-to-web-scraping-with-node-js-daa2027dcd3">Dan
+                                        Ni's Web Scraping Guide</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=RM_nXOyHwN0">Codegeous' Filter Guide</a></li>
+                            </ul>
 
-                            </div>
-                        </section>
-                    </div>
-                    
-                    <div class="interests">
-                        <section>
-                            <h1 class="content-subhead">Interests and Organizations</h1>
-                            <p><a href="https://villanovataekwondo.github.io/pages/">Villanova Club Taekwondo</a></p>
-                            <p><a href="http://www.renewalmainline.org/">Renewal Mainline Presbyterian Church</a></p>
-                            <p><a href="https://www.goodneighbornj.org/">Good Neighbor Ministry</a></p>
-                    
-                        </section>
-                    </div>
-
+                        </div>
+                    </section>
                 </div>
+
+                <div class="interests">
+                    <section>
+                        <h1 class="content-subhead">Interests and Organizations</h1>
+                        <p><a href="https://www.facebook.com/villanovataekwondo/">Villanova Club Taekwondo</a></p>
+                        <p><a href="http://www.renewalmainline.org/">Renewal Mainline Presbyterian Church</a></p>
+                        <p><a href="https://www.goodneighbornj.org/">Good Neighbor Ministry</a></p>
+
+                    </section>
+                </div>
+
             </div>
         </div>
+    </div>
     </div>
 
     <script type="text/javascript">
@@ -130,4 +139,5 @@
         */
     </script>
 </body>
+
 </html>
