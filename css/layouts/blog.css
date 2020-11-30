@@ -6,12 +6,12 @@
 
 a {
     text-decoration: none;
-    color: #65839a;
+    color: #8d8d8d;
 }
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #c1cdd7;
+    color: #bbbbbb;
 }
 
 h3 {
@@ -34,8 +34,9 @@ h3 {
     margin: 3em auto;
 }
 
+
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: #000000;
     color: #fff;
 }
 
@@ -47,8 +48,8 @@ h3 {
     text-transform: uppercase;
 }
 .brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+    /* font-weight: 300; */
+    color: rgb(161, 161, 161);
 }
 
 .nav-list {
