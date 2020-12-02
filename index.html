@@ -1,141 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-    <title>.michaelhbaek.</title>
-    <link rel=icon href=Logos/favicon-256.png> <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-        integrity="sha384-" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="css/layouts/blog.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>.michael h baek.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            let starter = $("div.hidden");
-            let sidebar = $("header.sidebar");
-            starter.fadeIn(1000).removeClass('hidden');
-        });
-    </script>
+    
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
-
-
-
 <body>
-    <div class="hidden">
-        <header class='sidebar'>
-            <div id="layout" class="pure-g">
-                <div class="sidebar pure-u-1 pure-u-md-1-4">
-                    <div class="header">
-                        <h1 class="brand-title">Michael Baek</h1>
-                        <h4 class="brand-tagline">Software Engineer <a href="https://www.cerner.com/">@Cerner</a></h4>
-                        <nav class="nav">
-                            <ul class="nav-list">
-                                <li class="nav-item">
-                                    <a href="https://www.github.com/hansol13"><img src="Logos/GitHub-Mark-32px.png" alt="Github"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.linkedin.com/in/michaelhbaek/"><img src="Logos/LinkedIn-Logo-28px.png"
-                                            alt="LinkedIn"></a>
-                                </li>
-                            </ul>
-                        </nav>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Michael Baek</h1>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="mailto:baekmichael96@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    <img id="profile-pic" src="./images/profile.jpg" alt="photo not loaded...">
+                    <h5 style="text-align:center;line-height:0;">Personalize Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">*Theme settings will be saved for your <br>next visit</p>
+                </div>
+
+                <div class="right-column">
+                    <div class="social-links-intro">
+                        <a target="_blank" href="https://www.linkedin.com/in/michaelhbaek/">
+                            <img class="social-icon" src="./images/linkedin.png" alt="linkedin"></a>
+                        <a target="_blank" href="https://github.com/hansol13">
+                            <img class="social-icon" src="./images/github.png" alt="github"></a>
+                    </div>
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>write code, teach Taekwondo, learn</p>
+                            <p id="current-employment">currently a software engineer at <a href="https://www.cerner.com/">Cerner Corporation</a></p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
                     </div>
                 </div>
-        </header>
-
-        <!-- main body -->
-        <div class="content pure-u-1 pure-u-md-3-4">
-            <div>
-                <p>this page is under construction</p>
-                <!-- current work wrapper -->
-                <div class="work">
-                    <h1 class="content-subhead">current work</h1>
-                    <section class="post" id="cerner">
-
-                    </section>
-                </div>
-                <!-- projects wrapper-->
-                <div class="posts">
-                    <h1 class="content-subhead">Projects</h1>
-
-                    <!-- A single post -->
-                    <section class="post" id="tkdscoreboard">
-                        <header class="post-header">
-                            <h2 class="post-title">
-                                <a href="https://hansol13.github.io/poomsae-score">Taekwondo Scoreboard</a></h2>
-                            <i class="post-meta">For Villanova Taekwondo and the entire Taekwondo Community</i>
-
-                        </header>
-
-                        <div class="post-description">
-                            <p>World Taekwondo standard Poomsae and Sparring scoreboard application built for Villanova
-                                Taekwondo to utilize technology in practice sessions to track scores and
-                                student progress. Built using ReactJS + Material-UI</p>
-                        </div>
-                    </section>
-                    <br>
-                    <section class="post" id="tkdwebsite">
-                        <header class="post-header">
-                            <h2 class="post-title">
-                                <a href="https://villanovataekwondo.github.io/pages">Villanova Club Taekwondo Website</a></h2>
-                            <i class="post-meta">For Villanova Taekwondo and its supporters</i>
-
-                        </header>
-
-                        <div class="post-description">
-                            <p>Built and designed Villanova Club Taekwondo's website.</p>
-                        </div>
-                    </section>
-                    <br>
-                    <section class="post" id="wscApp">
-                        <header class="post-header">
-                            <h2 class="post-title">
-                                <a href="http://w-catechisms.herokuapp.com/">Westminster Shorter Catechism Reference
-                                    and Search</a>
-                            </h2>
-                            <i class="post-meta">For public use</i>
-
-                        </header>
-
-                        <div class="post-description">
-                            <p>A lightweight search application that filters out cards of the WSC based on a keyword search. Built using ReactJS, deployed through Heroku</p>
-
-                        </div>
-                    </section>
-                </div>
-
-                
-                <!-- affiliations wrapper -->
-                <div class="affiliations">
-                    <section>
-                        <h1 class="content-subhead">Affiliations</h1>
-                        <p><a href="https://www.facebook.com/villanovataekwondo/">Villanova Club Taekwondo</a></p>
-                        <p><a href="http://www.renewalmainline.org/">Renewal Mainline Presbyterian Church</a></p>
-                        <p><a href="https://www.goodneighbornj.org/">Good Neighbor Ministry</a></p>
-
-                    </section>
-                </div>
-
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-    <script type="text/javascript">
-        /*
-        $("section").mouseenter(function () {
-            $(this).css("font-size","120%");
-        });
-        $("section").mouseleave(function () {
-            $(this).css("font-size","100%");
-        });
-        */
-    </script>
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I start my day by working as a software engineer for Cerner Corporation. My evenings are spent coaching/training in Taekwondo, serving my church, or working on my next side project.</p>
+                    <p>Hobbies include: Taekwondo, guitar, music studies, basketball, and magic tricks.</p>
+                
+                    <hr>
+
+                </div>
+                
+                <div class="technical-wrapper">
+                    <h4>Technical Skills</h4>
+                    <p>front-end focused dev, exposed to full-stack development: <a target="_blank" href="./MichaelBaekResume-public.pdf">Download Resume</a></p>
+                    <div id="skills-wrapper">
+                        <ul>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>JQuery</li>
+                            <li>HTML + CSS</li>
+                        </ul>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>BASH scripting</li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Recent Projects</h3>
+
+            <div class="post-wrapper">
+                <!-- wrap all posts in a div so that the container is a blank div -->
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./images/tkdscoreboard.png" alt="Taekwondo Scoreboard">
+                        <div class="post-preview">
+                            <h6 class="post-title">Taekwondo Scoreboard</h6>
+                            <p class="post-intro">Simple scoreboard app to track an athlete's score using World Taekwondo competition standards.</p>
+                            <!-- <a target="_blank" href="./taekwondoscoreboard.html">Read More</a> -->
+                            <a target="_blank" href="https://hansol13.github.io/poomsae-score/">demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./images/WSC.png" alt="Westminster Shorter Catechism">
+                        <div class="post-preview">
+                            <h6 class="post-title">WSC Search and Reference</h6>
+                            <p class="post-intro">Search & Reference app for the Westminster Shorter Catechism.</p>
+                            <!-- <a target="_blank" href="./wsc.html">Read More</a> -->
+                            <a target="_blank" href="http://w-catechisms.herokuapp.com/">demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./images/clubtkd.png" alt="VU Taekwondo club">
+                        <div class="post-preview">
+                            <h6 class="post-title">Villanova Taekwondo Website</h6>
+                            <p class="post-intro">Developed Villanova Club Taekwondo's informational website.</p>
+                            <a target="_blank" href="https://villanovataekwondo.github.io/pages/">demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get in touch!</h3>
+            <p style="text-align: center">Message me on LinkedIn or email me!</p>
+            <div class="social-links-footer">
+                <a target="_blank" href="https://www.linkedin.com/in/michaelhbaek/">
+                    <img class="social-icon" src="./images/linkedin.png" alt="linkedin"></a>
+                <!-- <a target="_blank" href="https://github.com/hansol13">
+                    <img class="social-icon" src="./images/github.png" alt="github"></a> -->
+                <a href="mailto:baekmichael96@gmail.com">
+                    <img class="social-icon" src="./images/email.png" alt="email">
+                </a>
+            </div>
+
+            <!-- custom form, not in use because servers cost money -->
+            <!-- <form id="contact-form" action="">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-button" type="submit" value="Send">
+            </form> -->
+        </div>
+    </section>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>

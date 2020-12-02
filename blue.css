@@ -1,0 +1,18 @@
+/* CSS VARIABLES */
+:root{
+    /* --mainColor: rgb(231, 231, 243); */
+    --mainColor: #15202b;
+    --secondaryColor: #192734;
+
+    --borderColor: ##164d56;
+
+    --mainText: #fff;
+    --secondaryText: #eeeeee;
+    
+    --themeDotBorder: #fff;
+
+    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewShadow: #111921;
+
+    --submitButtonColor: #17a2b8;
+}
