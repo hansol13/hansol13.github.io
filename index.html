@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     
     <link rel="stylesheet" type="text/css" href="default.css">
     <link id="theme-style" rel="stylesheet" href="">
@@ -144,38 +146,41 @@
                 <!-- wrap all posts in a div so that the container is a blank div -->
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="./images/tkdscoreboard.png" alt="Taekwondo Scoreboard">
+                        <img id="weatherApp" class="thumbnail" src="./images/weather-app.png" alt="VU Taekwondo club">
+                        <div class="post-preview">
+                            <h6 class="post-title">Weather Tracker</h6>
+                            <p class="post-intro">Clean real time weather app with location tracking.</p>
+                            <p class="technologies">React OpenweatherAPI</p>
+                            <a target="_blank" href="https://mhbweather.web.app">live demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img id="poomsaeScore" class="thumbnail" src="./images/poomsae-score.png" alt="Taekwondo Scoreboard">
                         <div class="post-preview">
                             <h6 class="post-title">Taekwondo Scoreboard</h6>
                             <p class="post-intro">Simple scoreboard app to track an athlete's score using World Taekwondo competition standards.</p>
-                            <!-- <a target="_blank" href="./taekwondoscoreboard.html">Read More</a> -->
-                            <a target="_blank" href="https://hansol13.github.io/poomsae-score/">demo</a>
+                            <p class="technologies">React Material-UI</p>
+                            <a target="_blank" href="https://hansol13.github.io/poomsae-score/">live demo</a>
                         </div>
                     </div>
                 </div>
 
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="./images/WSC.png" alt="Westminster Shorter Catechism">
+                        <img id="wsc" class="thumbnail" src="./images/wsc.png" alt="Westminster Shorter Catechism">
                         <div class="post-preview">
                             <h6 class="post-title">WSC Search and Reference</h6>
                             <p class="post-intro">Search & Reference app for the Westminster Shorter Catechism.</p>
-                            <!-- <a target="_blank" href="./wsc.html">Read More</a> -->
-                            <a target="_blank" href="http://w-catechisms.herokuapp.com/">demo</a>
+                            <p class="technologies">React</p>
+                            <a target="_blank" href="http://w-catechisms.herokuapp.com/">live demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./images/clubtkd.png" alt="VU Taekwondo club">
-                        <div class="post-preview">
-                            <h6 class="post-title">Villanova Taekwondo Website</h6>
-                            <p class="post-intro">Developed Villanova Club Taekwondo's informational website.</p>
-                            <a target="_blank" href="https://villanovataekwondo.github.io/pages/">demo</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -211,5 +216,25 @@
         </div>
     </section>
     <script type="text/javascript" src="./script.js"></script>
+    <script>
+        $(function() {
+            $("#weatherApp").hover(
+                function() {$(this).attr("src", "./images/weather-app.gif");},
+                function() {$(this).attr("src", "./images/weather-app.png");}                         
+            );                  
+        });
+        $(function() {
+            $("#poomsaeScore").hover(
+                function() {$(this).attr("src", "./images/poomsae-score.gif");},
+                function() {$(this).attr("src", "./images/poomsae-score.png");}                         
+            );                  
+        });
+        $(function() {
+            $("#wsc").hover(
+                function() {$(this).attr("src", "./images/wsc.gif");},
+                function() {$(this).attr("src", "./images/wsc.png");}                         
+            );                  
+        });
+    </script>
 </body>
 </html>
